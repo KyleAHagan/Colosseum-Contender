@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD7F407-7E41-4D2C-BFEC-A3A707437956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SDL2.0 Lib\include;..\Third Party\glew-2.1.0\include\GL</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SDL2.0 Lib\lib\x86;..\Third Party\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glew32.lib;glew32s.lib;opengl32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SDL2.0 Lib\include;..\Third Party\glew-2.1.0\include\GL</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SDL2.0 Lib\lib\x86;..\Third Party\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glew32.lib;glew32s.lib;opengl32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Components\ArrowBehavior.cpp" />
+    <ClCompile Include="Components\AttackZoneBehavior.cpp" />
+    <ClCompile Include="Components\BatBehavior.cpp" />
+    <ClCompile Include="Components\CharacterAnimations.cpp" />
+    <ClCompile Include="Components\Body.cpp" />
+    <ClCompile Include="Components\Component.cpp" />
+    <ClCompile Include="Components\Controller.cpp" />
+    <ClCompile Include="Components\GoblinMeleeBehavior.cpp" />
+    <ClCompile Include="Components\GoblinRangedBehavior.cpp" />
+    <ClCompile Include="Components\MenuBehavior.cpp" />
+    <ClCompile Include="Components\OrcBehavior.cpp" />
+    <ClCompile Include="Components\PlayerBehavior.cpp" />
+    <ClCompile Include="Components\RatBehavior.cpp" />
+    <ClCompile Include="Components\SlimeBehavior.cpp" />
+    <ClCompile Include="Components\SpiderBehavior.cpp" />
+    <ClCompile Include="Components\Sprite.cpp" />
+    <ClCompile Include="Components\Stats.cpp" />
+    <ClCompile Include="Components\Transform.cpp" />
+    <ClCompile Include="Components\TrollBehavior.cpp" />
+    <ClCompile Include="Components\UIBar.cpp" />
+    <ClCompile Include="Components\UpDown.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="Frame Rate Controller.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GraphicsManager.cpp" />
+    <ClCompile Include="Input Manager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Components\ArrowBehavior.h" />
+    <ClInclude Include="Components\AttackZoneBehavior.h" />
+    <ClInclude Include="Components\BatBehavior.h" />
+    <ClInclude Include="Components\CharacterAnimations.h" />
+    <ClInclude Include="Components\Body.h" />
+    <ClInclude Include="Components\Component.h" />
+    <ClInclude Include="Components\Controller.h" />
+    <ClInclude Include="Components\GoblinMeleeBehavior.h" />
+    <ClInclude Include="Components\GoblinRangedBehavior.h" />
+    <ClInclude Include="Components\MenuBehavior.h" />
+    <ClInclude Include="Components\OrcBehavior.h" />
+    <ClInclude Include="Components\PlayerBehavior.h" />
+    <ClInclude Include="Components\RatBehavior.h" />
+    <ClInclude Include="Components\SlimeBehavior.h" />
+    <ClInclude Include="Components\SpiderBehavior.h" />
+    <ClInclude Include="Components\Sprite.h" />
+    <ClInclude Include="Components\Stats.h" />
+    <ClInclude Include="Components\Transform.h" />
+    <ClInclude Include="Components\TrollBehavior.h" />
+    <ClInclude Include="Components\UIBar.h" />
+    <ClInclude Include="Components\UpDown.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="Frame Rate Controller.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GraphicsManager.h" />
+    <ClInclude Include="Input Manager.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="ResourceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.frag" />
+    <None Include="debug.vert" />
+    <None Include="lighting.frag" />
+    <None Include="lighting.vert" />
+    <None Include="UI.frag" />
+    <None Include="UI.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+Player.txt
+0 0 0 0 200 200 1
+
+Slime.txt
+0 400 0 0 200 200 1
+
+Troll.txt
+100 200 0 0 200 200 1
+
+GoblinRanged.txt
+100 -400 0 0 200 200 1

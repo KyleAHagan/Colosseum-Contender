@@ -1,0 +1,23 @@
+PLAYER
+Character
+PlayerBehavior
+Transform
+400 100 0 0 200 200 1
+CharacterAnimations
+Sprite
+Character_Hero.png
+2 1 1 0
+Controller
+Body
+80 80 70
+Circle
+4
+Stats
+100
+100
+100
+100
+1.0
+15
+100000
+10

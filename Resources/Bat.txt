@@ -1,0 +1,24 @@
+BAT
+Character
+BatBehavior
+Transform
+200 300 0 0 200 200 1
+CharacterAnimations
+Sprite
+Character_Bat.png
+2 1 1 0
+UpDown
+0 1000 1
+Body
+80 80 7
+Circle
+4
+Stats
+10
+10
+100
+100
+0.3
+5
+8000
+8

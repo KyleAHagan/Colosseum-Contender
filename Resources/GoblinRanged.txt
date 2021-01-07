@@ -1,0 +1,39 @@
+GOBLINRANGED
+Character
+GoblinRangedBehavior
+Transform
+-200 -600 0 0 200 200 1
+CharacterAnimations
+Sprite
+Character_Goblin_Sniper.png
+2 1 1 0
+Body
+80 80 70
+Circle
+4
+Stats
+15
+15
+100
+100
+0.5
+15
+10000
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

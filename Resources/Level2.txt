@@ -1,0 +1,26 @@
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+Player.txt
+0 0 0 0 200 200 1
+
+
+
+GoblinMelee.txt
+0 400 0 0 200 200 1
+
+Orc.txt
+0 -400 0 0 200 200 1
+
+
+GoblinMelee.txt
+0 400 0 0 200 200 1
+
+GoblinMelee.txt
+0 1000 0 0 200 200 1
+
+Rat.txt
+2000 0 0 0 200 200 1

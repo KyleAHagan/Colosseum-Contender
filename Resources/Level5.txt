@@ -1,0 +1,41 @@
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+UIBar.txt
+0 0 0 0 1000 0.05 1
+
+Player.txt
+0 0 0 0 200 200 1
+
+GoblinMelee.txt
+100 100 0 0 200 200 1
+
+GoblinMelee.txt
+-300 300 0 0 200 200 1
+
+GoblinMelee.txt
+-300 200 0 0 200 200 1
+
+GoblinMelee.txt
+0 -300 0 0 200 200 1
+
+GoblinMelee.txt
+300 0 0 0 200 200 1
+
+GoblinMelee.txt
+-300 100 0 0 200 200 1
+
+GoblinRanged.txt
+100 -400 0 0 200 200 1
+
+GoblinRanged.txt
+100 -600 0 0 200 200 1
+
+GoblinRanged.txt
+300 -400 0 0 200 200 1
+
+GoblinRanged.txt
+500 -400 0 0 200 200 1
+
+GoblinRanged.txt
+1200 -200 0 0 200 200 1

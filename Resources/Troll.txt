@@ -1,0 +1,22 @@
+TROLL
+Character
+TrollBehavior
+Transform
+2000 2000 0 0 200 200 1
+CharacterAnimations
+Sprite
+Character_Troll.png
+2 1 1 0
+Body
+80 80 70
+Circle
+4
+Stats
+100
+100
+100
+100
+0.5
+30
+40000
+3

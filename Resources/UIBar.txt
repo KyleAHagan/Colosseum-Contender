@@ -1,0 +1,9 @@
+UIBar
+UI
+UIBar
+1
+Transform
+100 100 50 0 1000 50 1
+Sprite
+UI.png
+1 1 1 0
