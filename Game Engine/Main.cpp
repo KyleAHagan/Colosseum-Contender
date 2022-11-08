@@ -28,6 +28,8 @@ End Header ----------------------------------------------------------------*/
 #include "../Third Party/glm/glm/glm.hpp"
 #include "../Third Party/glm/glm/ext.hpp"
 
+#include "../Third Party/log/log.h"
+
 #include "Input Manager.h"
 #include "Frame Rate Controller.h"
 #include "ResourceManager.h"
@@ -84,6 +86,9 @@ extern "C" FILE * __cdecl __iob_func(void)
 
 int main(int argc, char* args[])
 {
+	Log logger("example.txt");
+	logger.LogInfo("Startup", 3.14, 9.99);
+
 	if (AllocConsole())
 	{
 		FILE* file;

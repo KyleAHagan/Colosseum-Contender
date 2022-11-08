@@ -577,11 +577,6 @@ void GraphicsManager::DrawWorld(bool debugMode)
 		float scaleX = objectTransform->scaleX;
 		float scaleY = objectTransform->scaleY;
 		float scaleZ = objectTransform->scaleZ;
-		if (gameObject->objectType == L"TitleScreen")
-		{
-			float scaleX = windowWidth;
-			float scaleY = windowHeight;
-		}
 
 		if (gameObject->objectType == L"UIBar")
 		{
@@ -787,11 +782,7 @@ void GraphicsManager::LoadShaders()
 		glLinkProgram(gLightingProgramID);
 		GLint programLinkingStatus = 0;
 		glGetProgramiv(gLightingProgramID, GL_LINK_STATUS, &programLinkingStatus);
-		if (programLinkingStatus == GL_TRUE)
-		{
-			//glUseProgram(gLightingProgramID);
-		}
-		else
+		if (programLinkingStatus != GL_TRUE)
 		{
 			GLint maxLength = 0;
 			glGetProgramiv(gLightingProgramID, GL_INFO_LOG_LENGTH, &maxLength);
@@ -893,11 +884,7 @@ void GraphicsManager::LoadShaders()
 		glLinkProgram(gUIProgramID);
 		GLint programLinkingStatus = 0;
 		glGetProgramiv(gUIProgramID, GL_LINK_STATUS, &programLinkingStatus);
-		if (programLinkingStatus == GL_TRUE)
-		{
-			//glUseProgram(gLightingProgramID);
-		}
-		else
+		if (programLinkingStatus != GL_TRUE)
 		{
 			GLint maxLength = 0;
 			glGetProgramiv(gUIProgramID, GL_INFO_LOG_LENGTH, &maxLength);
@@ -998,11 +985,7 @@ void GraphicsManager::LoadShaders()
 		glLinkProgram(gDebugProgramID);
 		GLint programLinkingStatus = 0;
 		glGetProgramiv(gDebugProgramID, GL_LINK_STATUS, &programLinkingStatus);
-		if (programLinkingStatus == GL_TRUE)
-		{
-			//glUseProgram(gDebugProgramID);
-		}
-		else
+		if (programLinkingStatus != GL_TRUE)
 		{
 			GLint maxLength = 0;
 			glGetProgramiv(gDebugProgramID, GL_INFO_LOG_LENGTH, &maxLength);
